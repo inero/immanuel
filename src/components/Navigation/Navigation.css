@@ -1,0 +1,17 @@
+.nav-row {
+    padding: 4px 0px !important;
+    background-color: #333333 !important;
+}
+
+.menu-color {
+    background-color: #333333 !important;
+}
+
+
+.profile-name {
+    color: grey;
+}
+
+.profile-name:hover {
+    color: rgb(95, 95, 95);
+}
