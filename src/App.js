@@ -26,7 +26,7 @@ function App() {
           <GridColumn width={2}></GridColumn>
           <GridColumn width={12}>
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/about" element={<About />} />
               <Route path="/emi" element={<EMICalculator />} />
               <Route path="/percentage" element={<PercentageCalculator />} />

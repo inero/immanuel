@@ -62,7 +62,7 @@ export const Navigation = () => {
                     <GridColumn width={2}></GridColumn>
                     <GridColumn width={12}>
                         <Menu inverted className="menu-color">
-                            <NavLink to="/">
+                            <NavLink to="/dashboard">
                                 <MenuItem name='home' active={activeItem === 'home'} onClick={handleItemClick}>
                                     Home
                                 </MenuItem>
