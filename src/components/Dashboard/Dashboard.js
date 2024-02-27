@@ -11,7 +11,6 @@ import {
     CardGroup,
     Image,
     FeedSummary,
-    FeedLabel,
     FeedEvent,
     FeedDate,
     FeedContent,

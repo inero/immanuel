@@ -31,7 +31,7 @@ export const Navigation = () => {
                 <GridRow stretched>
                     <GridColumn width={1}></GridColumn>
                     <GridColumn width={14}>
-                        <Menu secondary inverted color="white">
+                        <Menu secondary inverted>
                             <MenuItem>
                                 <Header as='h1'>
                                     <IconGroup size='large'>
@@ -62,7 +62,7 @@ export const Navigation = () => {
                     <GridColumn width={2}></GridColumn>
                     <GridColumn width={12}>
                         <Menu inverted className="menu-color">
-                            <NavLink to="/dashboard">
+                            <NavLink to="/">
                                 <MenuItem name='home' active={activeItem === 'home'} onClick={handleItemClick}>
                                     Home
                                 </MenuItem>
