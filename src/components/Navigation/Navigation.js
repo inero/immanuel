@@ -16,6 +16,7 @@ import {
     Dropdown,
     DropdownMenu,
     DropdownItem,
+    ListDescription,
 } from 'semantic-ui-react';
 import './Navigation.css';
 import avatar from '../../assets/images/profile.jpg';
@@ -28,10 +29,9 @@ export const Navigation = () => {
     return (
         <>
             <Grid padded>
-                <GridRow stretched>
-                    <GridColumn width={1}></GridColumn>
-                    <GridColumn width={14}>
-                        <Menu secondary inverted>
+                <GridRow stretched centered>
+                    <GridColumn mobile={16} tablet={12} computer={12}>
+                        <Menu stackable secondary inverted>
                             <MenuItem>
                                 <Header as='h1'>
                                     <IconGroup size='large'>
@@ -44,9 +44,13 @@ export const Navigation = () => {
                                 <NavLink to="/about">
                                     <List horizontal relaxed='very'>
                                         <ListItem>
-                                            <Image size="mini" avatar src={avatar} />
+                                            <Image size="tiny" avatar src={avatar} />
                                             <ListContent className="profile-name">
-                                                IMMANUEL KIRUBAHARAN
+                                                <b>IMMANUEL KIRUBAHARAN</b>
+                                                <ListDescription>
+                                                    <a href="mailto:uneedimman@gmail.com">uneedimman@gmail.com</a>
+                                                    <br/>+91 9986877689
+                                                </ListDescription>
                                             </ListContent>
                                         </ListItem>
                                     </List>
@@ -54,15 +58,13 @@ export const Navigation = () => {
                             </MenuItem>
                         </Menu>
                     </GridColumn>
-                    <GridColumn width={1}></GridColumn>
                 </GridRow>
             </Grid>
             <Grid padded>
-                <GridRow className="nav-row">
-                    <GridColumn width={2}></GridColumn>
-                    <GridColumn width={12}>
-                        <Menu inverted className="menu-color">
-                            <NavLink to="/">
+                <GridRow centered className="nav-row">
+                    <GridColumn mobile={16} tablet={12} computer={12}>
+                        <Menu stackable inverted className="menu-color">
+                            <NavLink to="/immanuel">
                                 <MenuItem name='home' active={activeItem === 'home'} onClick={handleItemClick}>
                                     Home
                                 </MenuItem>
@@ -89,7 +91,6 @@ export const Navigation = () => {
                             </Dropdown>
                         </Menu>
                     </GridColumn>
-                    <GridColumn width={2}></GridColumn>
                 </GridRow>
             </Grid>
         </>

@@ -11,7 +11,6 @@ import {
   GridRow,
 } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
-import './App.css';
 
 function App() {
   return (
@@ -22,17 +21,16 @@ function App() {
             <Navigation />
           </GridColumn>
         </GridRow>
-        <GridRow>
-          <GridColumn width={2}></GridColumn>
-          <GridColumn width={12}>
+        <GridRow centered>
+          <GridColumn centered style={{'padding-bottom': '100px'}} mobile={12} tablet={12} computer={12}>
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route index element={<Dashboard />} />
+              <Route path="/immanuel" element={<Dashboard />} />
               <Route path="/about" element={<About />} />
               <Route path="/emi" element={<EMICalculator />} />
               <Route path="/percentage" element={<PercentageCalculator />} />
             </Routes>
           </GridColumn>
-          <GridColumn width={2}></GridColumn>
         </GridRow>
         <GridRow>
           <GridColumn>
