@@ -19,7 +19,7 @@ import {
     ListDescription,
 } from 'semantic-ui-react';
 import './Navigation.css';
-import avatar from '../../assets/images/profile.jpg';
+import avatar from '../../assets/images/immanuel.JPG';
 
 export const Navigation = () => {
     const [activeItem, setActiveItem] = useState('home');
@@ -69,11 +69,11 @@ export const Navigation = () => {
                                     Home
                                 </MenuItem>
                             </NavLink>
-                            <NavLink to="/blog">
+                            {/* <NavLink to="/blog">
                                 <MenuItem name='blog' active={activeItem === 'blog'} onClick={handleItemClick} >
                                     Blog
                                 </MenuItem>
-                            </NavLink>
+                            </NavLink> */}
                             <NavLink to="/about">
                                 <MenuItem name='about' active={activeItem === 'about'} onClick={handleItemClick} >
                                     About

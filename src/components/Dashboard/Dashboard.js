@@ -58,18 +58,18 @@ export const Dashboard = () => {
       ];
       const education = [
         {
-          header: 'MCA',
+          header: 'Master of Computer Applications,',
           description:
             'from June 2010 to April 2013',
           meta: '80%',
-          detail: 'Master of Computer Applications'
+          detail: 'M.C.A.,'
         },
         {
-          header: 'BCA',
+          header: 'Bachelor of Computer Applications,',
           description:
             'from June 2007 to April 2010',
           meta: '71%',
-          detail: 'Bachelor of Computer Applications'
+          detail: 'B.C.A.,'
         }
       ];
   return (
@@ -88,9 +88,9 @@ export const Dashboard = () => {
                         </CardDescription>
                     </CardContent>
                     <CardContent extra textAlign="center">
-                        <a>
-                            •JavaScript •ReactJs •Angular •AngularJs •Redux •NodeJs •PolymerJs •LitElement •EcmaScript •Semantic-UI •Bootstrap •Ajax •Axios •HTML •CSS •GIT
-                        </a>
+                        <span>
+                            •JavaScript •ReactJs •Angular •AngularJs •NextJs •EcmaScript •Redux •NodeJs •PolymerJs •LitElement •EcmaScript •Semantic-UI •Bootstrap •Ajax •Axios •HTML •CSS •GIT
+                        </span>
                     </CardContent>
                 </Card>
             </GridColumn>
@@ -107,9 +107,9 @@ export const Dashboard = () => {
                                             <div>{exp.detail}</div>
                                         </CommentMetadata>
                                         <CommentText>{exp.description}</CommentText>
-                                        <CommentActions>
+                                        {/* <CommentActions>
                                             <CommentAction>{exp.meta}</CommentAction>
-                                        </CommentActions>
+                                        </CommentActions> */}
                                     </CommentContent>
                                 </Comment>
                             )
@@ -126,13 +126,14 @@ export const Dashboard = () => {
                                 <Comment key={index}>
                                     <CommentContent>
                                         <CommentAuthor as='a'>{edu.header}</CommentAuthor>
+                                        <br/>
                                         <CommentMetadata>
-                                            <div>{edu.detail}</div>
+                                            <div>{edu.detail}</div> <div>({edu.meta})</div>
                                         </CommentMetadata>
-                                        <CommentText>{edu.description}</CommentText>
-                                        <CommentActions>
-                                            <CommentAction>{edu.meta}</CommentAction>
-                                        </CommentActions>
+                                        {/* <CommentText>{edu.description}</CommentText> */}
+                                        {/* <CommentActions>
+                                            <CommentAction></CommentAction>
+                                        </CommentActions> */}
                                     </CommentContent>
                                 </Comment>
                             )
